@@ -16,16 +16,18 @@
   <body>
     <main class="bg-[#585858] flex justify-center items-center h-screen">
       <section
-        class="bg-white w-[65%] flex flex-row p-[2.5rem] rounded-xl gap-5"
+        class="bg-white w-[65%] max-w-[71.87rem] flex flex-row p-[2.5rem] rounded-xl gap-5 max-[1500px]:w-[90%] max-[1000px]:flex-col max-[1000px]:items-center"
       >
         <div
           id="container-div-esquerdo"
-          class="w-[60%] flex flex-col justify-center"
+          class="w-[60%] flex flex-col justify-center max-[1000px]:w-full"
         >
           <img class="mb-3" src="assets/tenis.png" alt="tênis Nike" />
           <div id="container-div-tamanhos">
             <p class="text-xl font-medium uppercase mb-2">Escolha o tamanho</p>
-            <ul class="flex flex-row gap-3 justify-between">
+            <ul
+              class="flex flex-row gap-3 justify-between flex-wrap max-[1000px]:justify-start"
+            >
               <li
                 class="w-[3.12rem] h-[3.12rem] text-2xl border-2 p-2 hover:bg-black hover:text-white hover:border-black cursor-pointer"
               >
@@ -70,7 +72,10 @@
           </div>
         </div>
 
-        <div id="container-div-direita" class="w-[40%] flex flex-col gap-2">
+        <div
+          id="container-div-direita"
+          class="w-[40%] flex flex-col gap-2 max-[1000px]:w-full"
+        >
           <p class="text-lg uppercase font-medium text-[#585858]">
             Tênis Masculino de Corrida
           </p>
