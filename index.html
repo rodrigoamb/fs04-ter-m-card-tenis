@@ -15,8 +15,13 @@
   </head>
   <body>
     <main class="bg-[#585858] flex justify-center items-center h-screen">
-      <section class="bg-white w-[65%] flex flex-row p-[2.5rem] rounded-xl">
-        <div id="container-div-esquerdo" class="bg-red-300 w-[60%]">
+      <section
+        class="bg-white w-[65%] flex flex-row p-[2.5rem] rounded-xl gap-5"
+      >
+        <div
+          id="container-div-esquerdo"
+          class="w-[60%] flex flex-col justify-center"
+        >
           <img class="mb-3" src="assets/tenis.png" alt="tênis Nike" />
           <div id="container-div-tamanhos">
             <p class="text-xl font-medium uppercase mb-2">Escolha o tamanho</p>
@@ -65,7 +70,7 @@
           </div>
         </div>
 
-        <div id="container-div-direita" class="bg-blue-300 w-[40%]">
+        <div id="container-div-direita" class="w-[40%] flex flex-col gap-2">
           <p class="text-lg uppercase font-medium text-[#585858]">
             Tênis Masculino de Corrida
           </p>
@@ -73,16 +78,20 @@
             nike epic react flyknit
           </h1>
           <p class="font-bold text-3xl text-[#585858]">R$999,00</p>
-          <p>
+          <p class="text-xl font-light text-justify mt-6 mb-4">
             O amortecimento máximo do flyknit garante uma corrida confortável no
             dia a dia. Nosso calçado mais macio e com maior amortecimento
             combina espuma ZoomX ultraleve com espuma ReactX ágil na entressola.
             Além disso, o padrão de tração redesenhado oferece uma transição
             suave do calcanhar à ponta.
           </p>
-          <div>
-            <button>Adicionar no carrinho</button>
-            <button>
+          <div class="flex flex-row gap-1">
+            <button
+              class="bg-[#585858] text-white py-4 uppercase w-full rounded-md"
+            >
+              Adicionar no carrinho
+            </button>
+            <button class="bg-[#585858] text-white py-4 px-6 rounded-md">
               <i class="fa-solid fa-heart"></i>
             </button>
           </div>
